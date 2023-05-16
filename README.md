@@ -41,16 +41,10 @@ Ruby
 ### Key Features <a name="key-features"></a>
 
 ``` sh
-N/A
+Person Class
+Teacher Class
+Student Class
 ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Not applicable]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +111,9 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 ``` sh
-N/A
+Rental Class
+Book Class
+Classroom Class
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
