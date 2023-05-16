@@ -1,8 +1,8 @@
 class Person
-  attr_accessor :name, :age
   attr_reader :id
+  attr_accessor :name, :age
 
-  def initialize(name = 'Unknown', age = nil, parent_permission = true)
+  def initialize(age:, name: 'Unknown', parent_permission: true)
     @id = generate_id
     @name = name
     @age = age
@@ -16,10 +16,10 @@ class Person
   private
 
   def of_age?
-    @age.to_i >= 18
+    @age >= 18
   end
 
   def generate_id
-    # Implement your logic to generate an ID here
+    (rand * 1000).floor
   end
 end
