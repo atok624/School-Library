@@ -1,4 +1,4 @@
-require_relative 'nameable'
+require_relative './nameable'
 require_relative '../decorator/capitalize_decorator'
 require_relative '../decorator/trimmer_decorator'
 
