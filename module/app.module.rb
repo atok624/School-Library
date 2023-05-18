@@ -92,7 +92,8 @@ module CreateEntity
         print 'Date: '
         date = gets.chomp
 
-        new_rental = Rental.new(date: date, book: @all_books[select_book_option.to_i], person: @all_people[select_person_option.to_i])
+        new_rental = Rental.new(date: date, book: @all_books[select_book_option.to_i],
+                                person: @all_people[select_person_option.to_i])
 
         save_rental(new_rental)
 
@@ -128,7 +129,9 @@ module DisplayEntity
   end
 
   def list_person_with_options
-    @all_people.each_with_index { |person, index| puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    @all_people.each_with_index do |person, index|
+      puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
     puts "\n"
   end
 
@@ -145,7 +148,9 @@ module DisplayEntity
       if selected_rentals.empty?
         puts "No rentals for this person!!\n\n"
       else
-        selected_rentals.each { |rental| puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" }
+        selected_rentals.each do |rental|
+          puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
+        end
         puts "\n"
       end
 
