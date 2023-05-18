@@ -65,9 +65,7 @@ class App
     loop do
       app_options
 
-      unless (1..7).include?(@option.to_i)
-        puts "Your input is invalid. Please enter then correct option value........\n"
-      end
+      puts "Your input is invalid. Please enter then correct option value........\n" unless (1..7).include?(@option.to_i)
 
       if @option.to_i == 7
         puts 'Thank you for using the app....'
